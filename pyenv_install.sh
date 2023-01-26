@@ -7,7 +7,7 @@ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev li
 curl https://pyenv.run | bash
 
 # Adicionando o caminho para o pyenv na variável de ambiente PATH
-echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
+export PATH="$HOME/.pyenv/bin:$PATH"
 
 # Configurando o pyenv
 eval "$(pyenv init -)"
