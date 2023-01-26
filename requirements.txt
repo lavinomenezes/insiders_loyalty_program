@@ -1,4 +1,3 @@
-iobotocore
 aiohttp==3.7.4.post0
 aioitertools==0.8.0
 altair==4.1.0
