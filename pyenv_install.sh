@@ -15,3 +15,4 @@ eval "$(pyenv virtualenv-init -)"
 
 # Atualizando o arquivo .bashrc
 source ~/.bashrc
+
