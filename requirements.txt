@@ -40,7 +40,6 @@ greenlet==1.1.0
 hijri-converter==2.1.3
 holidays==0.11.2
 htmlmin==0.1.12
-httpstan==4.5.0
 idna==2.10
 ImageHash==4.2.0
 ipykernel==5.5.3
