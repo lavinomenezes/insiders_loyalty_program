@@ -2,11 +2,10 @@
 
 data=$(date +"%d_%m_%Y_%H_%M_%S")
 
-path='C:/Users/Lavin/Documents/Comunidade DS/insiders clustering'
-#path_to_bibli='C:/Users/Lavin/anaconda3/envs/insiders_clustering/Lib/site-packages'
+path='/home/ubuntu/insiders_loyalty_program'
+path_to_bibli='/home/ubuntu/.pyenv/versions/insider_clustering/bin'
 #path_to_bibli= 'C:/Users/Lavin/anaconda3/envs/insiders_clustering/Scripts'
-$path_to_bibli/papermill $path/src/models/insider_clustering_v09_deploy_light.ipynb $path/report/insider_clustering_v09_deploy_light_$data.ipynb
-
+$path_to_bibli/papermill $path/src/models/insider_clustering_v10_deploy_light_production $path/report/insider_clustering_v09_deploy_light_$data.ipynb
 
 
 
