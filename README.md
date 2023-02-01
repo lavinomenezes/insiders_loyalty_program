@@ -60,6 +60,8 @@ Entregar uma lista de pessoas elegíveis a participar dovprograma Insiders, junt
 
 Neste projeto foi aplicado o método CRISP-DM (Cross-Industry Standard Process for Data Mining) adaptado para os processos de ciência de dados que se tornou o CRIS-DS.
 
+![](https://github.com/lavinomenezes/insiders_loyalty_program/tree/main/data/images)
+Modelo crisp-dm
 
 ##  Os  principais insights de negócio
 
