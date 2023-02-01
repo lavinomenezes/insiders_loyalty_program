@@ -5,12 +5,15 @@
 
 A empresa All in One Place é uma empresa Outlet Multimarcas, ou seja, ela comercializa produtos de segunda
 linha de várias marcas a um preço menor, através de um e-commerce.
+
 Em pouco mais de 1 anos de operação, o time de marketing percebeu que alguns clientes da sua base,
 compram produtos mais caros, com alta frequência e acabam contribuindo com uma parcela significativa do
 faturamento da empresa.
+
 Baseado nessa percepção, o time de marketing vai lançar um programa de fidelidade para os melhores clientes
 da base, chamado Insiders. Mas o time não tem um conhecimento avançado em análise de dados para eleger
 os participantes do programa.
+
 Por esse motivo, o time de marketing requisitou ao time de dados uma seleção de clientes elegíveis ao
 programa, usando técnicas avançadas de manipulação de dados. Será entregue uma lista contendo os clientes classificados de acordo com suas caracteristicas de consumo, junto a lista também será entregue um dashboard para melhor visualização das caracteristicas dos grupos resultantes da análise. 
 
@@ -46,10 +49,10 @@ Entregar uma lista de pessoas elegíveis a participar dovprograma Insiders, junt
 ##  Premissas do negócio
 <ul>
     <li>As informações estão limitadas no periodo de Novembro de 2016 ate Dezembro de 2017.</li>
-    <li>na coluna "quantity" os valores negativos foram considerados devoluções.</li>
-    <li>foram descartados linhas que o valor unitário "unit_price" é menor que 0.04.</li>
+    <li>Na coluna "quantity" os valores negativos foram considerados devoluções.</li>
+    <li>Foram descartados linhas que o valor unitário "unit_price" é menor que 0.04.</li>
     <li>Linhas em que o 'customer_id' tinha valores nulos foram preenchidos com valores sequenciais a partir do valor numérico mais alto da coluna. Por se tratar apenas de um identificador, esse processo não afetará o modelo ou a análise.</li>
-    <li>Todas as linhas em que os valores da coluna "stock_code" não são puramente numéricos serão removidas, devido a falta de conhecimento sobre o significado desses valores</li>
+    <li>Todas as linhas em que os valores da coluna "stock_code" não são puramente numéricos serão removidas, devido a falta de conhecimento sobre o significado desses valores.</li>
 </ul>
 
 
