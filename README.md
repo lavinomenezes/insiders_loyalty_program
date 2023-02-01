@@ -65,6 +65,43 @@ Modelo crisp-dm
 
 ##  Os  principais insights de negócio
 
+A divisão dos passos utilizados no projeto foi:
+
+<ol>
+<li><strong>Entendimento de negócio:</strong> Compreender o motivo da requisição dos agrupamentos de clientes e as características principais a serem observadas é fundamental para entender melhor o problema e apresentar a solução mais eficiente em menor tempo possível.
+</li>
+
+<li>
+<strong>Coleta de dados:</strong> Todos os dados estavam disponíveis na plataforma, sendo esta disponibilizada pela própria empresa.
+</li>
+<li>
+<li>
+<strong>Análise descritiva:</strong> Uma breve análise dos dados para adquirir familiaridade com eles. Os dados foram divididos em numéricos e categóricos para aplicarmos os métodos de análise adequados para cada tipo. Durante a análise, observamos algumas irregularidades nos dados, que, devido à falta de informações sobre quem montou a tabela, poderiam afetar nossa análise e modelagem, como quantidades negativas e códigos alfanuméricos no código de estoque.   
+</li>
+<li>
+<strong>Dados faltantes:</strong> No início, havía uma quantidade significativa de dados nulos na coluna 'customer_id', chegando a quase 25% dos dados. Seguindo da coluna 'description', com 0,25% de dados nulos. Por se tratar apenas de um identificador, a coluna 'customer_id' foi preenchida de forma sequencial. Já a coluna 'description' foi removida por não apresentar relevância neste momento da análise.
+</li>
+<li>
+<li>
+<strong>Filtragem de dados:</strong> Remoção de colunas que não tem impacto no modelo e as que foram criadas como auxiliares no processo de feature engineering. Remoção de linhas que não contribuem com o modelo e aquelas que por não termos acesso aos significados dos códigos alfanuméricos podem atrapalhar a análise. Sendo eles:
+<ul>
+        <li>Colunas removidas: 'description','country';</li>
+        <li>Linhas removidas: Linhas do 'unit_price' que tem valor abaixo de U$0.04, linhas que a coluna 'stock_code' possui os seguntes códigos: ['POST', 'D', 'DOT', 'M', 'S', 'AMAZONFEE', 'm', 'DCGSSBOY','DCGSSGIRL', 'PADS', 'B', 'CRUK','C2'], linha que a coluna 'country' tinha essas descrições: ['European Community','Unspecified'] </li>
+</ul>
+</li>
+    
+<strong>Feature engineering:</strong> No primeiro ciclo do projeto foi decidido não criar nenhuma nova variável, apenas algumas das variáveis categóricas tiveram seus valores transformados para melhor performance do algoritmo. Sendo elas: 
+<ul>
+<li>
+               gender: Male = 0, Female = 1;
+</li>
+<li>
+               vehicle_damage: Yes = 1, No = 0.
+</li>
+</ul>
+</li>
+</ol>
+
 
 ## Performance do modelo de Machine learning 
 
