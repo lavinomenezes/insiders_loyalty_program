@@ -88,16 +88,22 @@ A divisão dos passos utilizados no projeto foi:
         <li>Linhas removidas: Linhas do 'unit_price' que tem valor abaixo de U$0.04, linhas que a coluna 'stock_code' possui os seguntes códigos: ['POST', 'D', 'DOT', 'M', 'S', 'AMAZONFEE', 'm', 'DCGSSBOY','DCGSSGIRL', 'PADS', 'B', 'CRUK','C2'], linha que a coluna 'country' tinha essas descrições: ['European Community','Unspecified']. </li>
 </ul>
 </li>
-    
-<strong>Feature engineering:</strong> No primeiro ciclo do projeto foi decidido não criar nenhuma nova variável, apenas algumas das variáveis categóricas tiveram seus valores transformados para melhor performance do algoritmo. Sendo elas: 
-<ul>
 <li>
-               gender: Male = 0, Female = 1;
-</li>
-<li>
-               vehicle_damage: Yes = 1, No = 0.
-</li>
-</ul>
+<strong>Feature engineering:</strong> Para melhor entendimento do comportamento dos clientes foram criadas atributos, baseados nos existentes, que serão analisados para a criação dos clusters. Sendo eles:
+
+    <ul>
+        <li>gross_revenue         </li>
+        <li>recency_days          </li>
+        <li>qtde_invoice          </li>
+        <li>qtde_items            </li>
+        <li>qtde_products         </li>
+        <li>avg_basket_size       </li>
+        <li>avg_unique_basket_size</li>
+        <li>freq                  </li>
+        <li>avg_ticket            </li>
+        <li>avg_rec_days          </li>
+        <li>qtde_returns          </li>
+    </ul>
 </li>
 </ol>
 
