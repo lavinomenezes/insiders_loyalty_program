@@ -75,7 +75,6 @@ A divisão dos passos utilizados no projeto foi:
 <strong>Coleta de dados:</strong> Todos os dados estavam disponíveis na plataforma, sendo esta disponibilizada pela própria empresa.
 </li>
 <li>
-<li>
 <strong>Análise descritiva:</strong> Uma breve análise dos dados para adquirir familiaridade com eles. Os dados foram divididos em numéricos e categóricos para aplicarmos os métodos de análise adequados para cada tipo. Durante a análise, observamos algumas irregularidades nos dados, que, devido à falta de informações sobre quem montou a tabela, poderiam afetar nossa análise e modelagem, como quantidades negativas e códigos alfanuméricos no código de estoque.   
 </li>
 <li>
@@ -119,7 +118,7 @@ A divisão dos passos utilizados no projeto foi:
     <li>Tree-based embedding.</li>
     </ul>
 </ul>
-    Ao final do estudo o 'Tree-based embedding' apresentou a melhor divisão de espaço. sendo escolhida as proxímas etapas.
+    <strong>Ao final da etapa o 'Tree-based embedding' apresentou a melhor divisão de espaço. sendo escolhida as proxímas etapas.</strong>
 <li>
 <strong>Preparação dos dados:</strong> Manipular os dados para se adequarem melhor num modelo de machine learning. 
  Re-escala dos atributos numéricos para não força o modelo a trabalhar com valores muito altos: 
