@@ -88,7 +88,7 @@ A divisão dos passos utilizados no projeto foi:
             <ul>
             <li>Linhas do 'unit_price' que tem valor abaixo de U$0.04</li> 
             <li>Linhas que a coluna 'stock_code' possui os seguntes códigos: ['POST', 'D', 'DOT', 'M', 'S', 'AMAZONFEE', 'm', 'DCGSSBOY','DCGSSGIRL', 'PADS', 'B', 'CRUK','C2']</li> 
-            <li>linha que a coluna 'country' tinha essas descrições: ['European Community','Unspecified'].</li>
+            <li>Linhas que a coluna 'country' possuia essas descrições: ['European Community','Unspecified'].</li>
             </ul>
          </li>
 </ul>
@@ -134,6 +134,17 @@ A divisão dos passos utilizados no projeto foi:
 MinMaxscaler: foi aplicado a todos os atributos já na etapa de EDA I para melhor se adequar a transformação do embedding .
 </li>
 </ul>
+</li>
+<li>
+<strong>Feature selection:</strong> Baseado nas analises dos atributos os escolhidos para dar continuidade a analise foram:
+    <ul>
+        <li>'customer_id'; </li>
+        <li>'gross_revenue'; </li>
+        <li>'recency_days'; </li>
+        <li>'qtde_products'; </li>
+        <li>'freq'; </li>
+        <li>'qtde_return'.</li>
+    </ul>
 </li>
 </ol>
 
