@@ -89,20 +89,35 @@ A divisão dos passos utilizados no projeto foi:
 </ul>
 </li>
 <li>
-<strong>Feature engineering:</strong> Para melhor entendimento do comportamento dos clientes foram criadas atributos, baseados nos existentes, que serão analisados para a criação dos clusters. Sendo eles:
+<strong>Feature engineering:</strong> Para compreender melhor o comportamento dos clientes, foram criados novos atributos a partir dos existentes. Estes atributos serão analisados para a formação de clusters. Sendo eles:
 
 <ul>
-        <li>gross_revenue         </li>
-        <li>recency_days          </li>
-        <li>qtde_invoice          </li>
-        <li>qtde_items            </li>
-        <li>qtde_products         </li>
-        <li>avg_basket_size       </li>
-        <li>avg_unique_basket_size</li>
-        <li>freq                  </li>
-        <li>avg_ticket            </li>
-        <li>avg_rec_days          </li>
-        <li>qtde_returns          </li>
+        <li>gross_revenue;         </li>
+        <li>recency_days;          </li>
+        <li>qtde_invoice;          </li>
+        <li>qtde_items;            </li>
+        <li>qtde_products;         </li>
+        <li>avg_basket_size;       </li>
+        <li>avg_unique_basket_size;</li>
+        <li>freq;                  </li>
+        <li>avg_ticket;            </li>
+        <li>avg_rec_days;          </li>
+        <li>qtde_returns.          </li>
+    Com os novos atributos foi feita a remoção de valores nulos que surgiram com eles devido a forma como foram derivados.
+</ul>
+</li>
+<li>
+<strong>Análise exploratória de dados I:</strong> Analise dos novos atributos criados, testando e validando hyphoteses para melhor entender o comportamento deles e como se relacionam. A analise consistiu em alguma etapas. Sendo elas:
+<ul>
+    <li>Analise dos atributos onde foi possivel ver alguns outliers que poderiam atrapalhar o modelo, assim foi decidada a remoção dos mesmos</li>
+    <li>Foi verificado quais atribusto tinham maior variabilidade, assim melhor contribuindo para o modelo.</li> 
+    <li>Foi também feito um estudo do espaço dos novos atributos levando eles para o espaço de "embedding". sendo aplicados os algoritimos: PCA, UMAP, T-SNE, Tree-based embedding</li>
+    <ul>
+    <li>PCA;</li> 
+    <li>UMAP;</li> 
+    <li>T-SNE;</li> 
+    <li>Tree-based embedding.</li>
+    </ul>
 </ul>
 </li>
 </ol>
