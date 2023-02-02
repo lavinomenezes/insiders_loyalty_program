@@ -109,8 +109,8 @@ A divisão dos passos utilizados no projeto foi:
 <li>
 <strong>Análise exploratória de dados I:</strong> Analise dos novos atributos criados, testando e validando hyphoteses para melhor entender o comportamento deles e como se relacionam. A analise consistiu em alguma etapas. Sendo elas:
 <ul>
-    <li>Analise dos atributos onde foi possivel ver alguns outliers que poderiam atrapalhar o modelo, assim foi decidada a remoção dos mesmos</li>
-    <li>Foi verificado quais atribusto tinham maior variabilidade, assim melhor contribuindo para o modelo.</li> 
+    <li>Analise dos atributos com a biblioteca pandas-profiling onde foi possivel ver alguns outliers que poderiam atrapalhar o modelo, assim foi decidida a remoção dos mesmos</li>
+    <li>Foi verificado quais atributo tinham maior variabilidade, assim melhor contribuindo para o modelo.</li> 
     <li>Foi também feito um estudo do espaço dos novos atributos levando eles para o espaço de "embedding". sendo aplicados os algoritimos: PCA, UMAP, T-SNE, Tree-based embedding</li>
     <ul>
     <li>PCA;</li> 
@@ -119,6 +119,16 @@ A divisão dos passos utilizados no projeto foi:
     <li>Tree-based embedding.</li>
     </ul>
 </ul>
+    Ao final do estudo o 'Tree-based embedding' apresentou a melhor divisão de espaço. sendo escolhida as proxímas etapas.
+<li>
+<strong>Preparação dos dados:</strong> Manipular os dados para se adequarem melhor num modelo de machine learning. 
+ Re-escala dos atributos numéricos para não força o modelo a trabalhar com valores muito altos: 
+<ul>
+<li>
+MinMaxscaler: foi aplicado a todos os atributos;
+</li>
+</ul>
+</li>
 </li>
 </ol>
 
