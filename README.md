@@ -91,7 +91,7 @@ A divisão dos passos utilizados no projeto foi:
 <li>
 <strong>Feature engineering:</strong> Para melhor entendimento do comportamento dos clientes foram criadas atributos, baseados nos existentes, que serão analisados para a criação dos clusters. Sendo eles:
 
-    <ul>
+<ul>
         <li>gross_revenue         </li>
         <li>recency_days          </li>
         <li>qtde_invoice          </li>
@@ -103,7 +103,7 @@ A divisão dos passos utilizados no projeto foi:
         <li>avg_ticket            </li>
         <li>avg_rec_days          </li>
         <li>qtde_returns          </li>
-    </ul>
+</ul>
 </li>
 </ol>
 
