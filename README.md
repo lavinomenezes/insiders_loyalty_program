@@ -151,9 +151,9 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de EDA I para melho
 
 ## Performance do modelo de Machine learning 
 
-## Performance de previsão
+## Performance de cluster
 
-## Resultados financeiros
+## Resultados 
 
 ##  Conclusão
 
@@ -161,9 +161,10 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de EDA I para melho
 <ul>
 <li>Testar mais hypotheses;</li>
 <li>Novo clico do CRISP-DM;</li>
-<li>Testar outros algoritmos de clusterização.</li>
-<li>Criar novas features</li>
+<li>Testar outros algoritmos de clusterização;</li>
+<li>Criar novas features.</li>
 </ul>
+
 ## Ferramentas utilizadas
 
 <ul>
@@ -175,7 +176,7 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de EDA I para melho
     <li>Sklearn</li>
     <li>Seaborn</li>
     <li>Umap</li>
-    <li>Umap</li>
+    <li>PCA</li>
     <li>T-SNE</li>
     <li>aws</li>
 </ul>
