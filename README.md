@@ -102,8 +102,9 @@ A divisão dos passos utilizados no projeto foi:
         <li>avg_ticket;            </li>
         <li>avg_rec_days;          </li>
         <li>qtde_returns.          </li>
-    Com os novos atributos foi feita a remoção de valores nulos que surgiram com eles devido a forma como foram derivados.
+    
 </ul>
+    Com os novos atributos foi feita a remoção de valores nulos que surgiram com eles devido a forma como foram derivados.
 </li>
 <li>
 <strong>Análise exploratória de dados I(EDA I):</strong> Analise dos novos atributos criados, testando e validando hyphoteses para melhor entender o comportamento deles e como se relacionam. A analise consistiu em alguma etapas. Sendo elas:
