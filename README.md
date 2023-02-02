@@ -84,7 +84,13 @@ A divisão dos passos utilizados no projeto foi:
 <strong>Filtragem de dados:</strong> Remoção de colunas que não tem impacto no modelo e as que foram criadas como auxiliares no processo de feature engineering. Remoção de linhas que não contribuem com o modelo e aquelas que por não termos acesso aos significados dos códigos alfanuméricos podem atrapalhar a análise. Sendo eles:
 <ul>
         <li>Colunas removidas: 'description','country';</li>
-        <li>Linhas removidas: Linhas do 'unit_price' que tem valor abaixo de U$0.04, linhas que a coluna 'stock_code' possui os seguntes códigos: ['POST', 'D', 'DOT', 'M', 'S', 'AMAZONFEE', 'm', 'DCGSSBOY','DCGSSGIRL', 'PADS', 'B', 'CRUK','C2'], linha que a coluna 'country' tinha essas descrições: ['European Community','Unspecified']. </li>
+        <li>Linhas removidas: 
+            <ul>
+            <li>Linhas do 'unit_price' que tem valor abaixo de U$0.04</li> 
+            <li>Linhas que a coluna 'stock_code' possui os seguntes códigos: ['POST', 'D', 'DOT', 'M', 'S', 'AMAZONFEE', 'm', 'DCGSSBOY','DCGSSGIRL', 'PADS', 'B', 'CRUK','C2']</li> 
+            <li>linha que a coluna 'country' tinha essas descrições: ['European Community','Unspecified'].</li>
+            </ul>
+         </li>
 </ul>
 </li>
 <li>
