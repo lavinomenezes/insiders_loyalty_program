@@ -106,7 +106,7 @@ A divisão dos passos utilizados no projeto foi:
 </ul>
 </li>
 <li>
-<strong>Análise exploratória de dados I:</strong> Analise dos novos atributos criados, testando e validando hyphoteses para melhor entender o comportamento deles e como se relacionam. A analise consistiu em alguma etapas. Sendo elas:
+<strong>Análise exploratória de dados I(EDA I):</strong> Analise dos novos atributos criados, testando e validando hyphoteses para melhor entender o comportamento deles e como se relacionam. A analise consistiu em alguma etapas. Sendo elas:
 <ul>
     <li>Analise dos atributos com a biblioteca pandas-profiling onde foi possivel ver alguns outliers que poderiam atrapalhar o modelo, assim foi decidida a remoção dos mesmos</li>
     <li>Foi verificado quais atributo tinham maior variabilidade, assim melhor contribuindo para o modelo.</li> 
@@ -124,10 +124,9 @@ A divisão dos passos utilizados no projeto foi:
  Re-escala dos atributos numéricos para não força o modelo a trabalhar com valores muito altos: 
 <ul>
 <li>
-MinMaxscaler: foi aplicado a todos os atributos;
+MinMaxscaler: foi aplicado a todos os atributos já na etapa de EDA I para melhor se adequar a transformação do embedding .
 </li>
 </ul>
-</li>
 </li>
 </ol>
 
