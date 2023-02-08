@@ -63,8 +63,6 @@ Neste projeto foi aplicado o método CRISP-DM (Cross-Industry Standard Process f
 ![](https://github.com/lavinomenezes/insiders_loyalty_program/blob/main/data/images/crisp.png)
 Modelo crisp-dm
 
-##  Os  principais insights de negócio
-
 A divisão dos passos utilizados no projeto foi:
 
 <ol>
@@ -81,7 +79,7 @@ A divisão dos passos utilizados no projeto foi:
 <strong>Dados faltantes:</strong> No início, havía uma quantidade significativa de dados nulos na coluna 'customer_id', chegando a quase 25% dos dados. Seguindo da coluna 'description', com 0,25% de dados nulos. Por se tratar apenas de um identificador, a coluna 'customer_id' foi preenchida de forma sequencial. Já a coluna 'description' foi removida por não apresentar relevância neste momento da análise.
 </li>
 <li>
-<strong>Filtragem de dados:</strong> Remoção de colunas que não tem impacto no modelo e as que foram criadas como auxiliares no processo de feature engineering. Remoção de linhas que não contribuem com o modelo e aquelas que por não termos acesso aos significados dos códigos alfanuméricos podem atrapalhar a análise. Sendo eles:
+<strong>Filtragem de dados:</strong>Remoção de linhas que não contribuem com o modelo e aquelas que por não termos acesso aos significados dos códigos alfanuméricos podem atrapalhar a análise. Sendo eles:
 <ul>
         <li>Colunas removidas: 'description','country';</li>
         <li>Linhas removidas: 
@@ -113,7 +111,7 @@ A divisão dos passos utilizados no projeto foi:
     Com os novos atributos foi feita a remoção de valores nulos que surgiram com eles devido a forma como foram derivados.
 </li>
 <li>
-<strong>Análise exploratória de dados I(EDA I):</strong> Analise dos novos atributos criados, testando e validando hyphoteses para melhor entender o comportamento deles e como se relacionam. A analise consistiu em alguma etapas. Sendo elas:
+<strong>Análise exploratória de dados I (EDA I):</strong> Análise dos novos atributos criados, testando e validando hyphoteses para melhor entender o comportamento deles e como se relacionam. A analise consistiu em alguma etapas. Sendo elas:
 <ul>
     <li>Analise dos atributos com a biblioteca pandas-profiling onde foi possivel ver alguns outliers que poderiam atrapalhar o modelo, assim foi decidida a remoção dos mesmos</li>
     <li>Foi verificado quais atributo tinham maior variabilidade, assim melhor contribuindo para o modelo.</li> 
@@ -125,18 +123,20 @@ A divisão dos passos utilizados no projeto foi:
     <li>Tree-based embedding.</li>
     </ul>
 </ul>
-    <strong>Ao final da etapa o 'Tree-based embedding' apresentou a melhor divisão de espaço. sendo escolhida as proxímas etapas.</strong>
+    <strong>Ao final da etapa o 'Tree-based embedding' apresentou a melhor divisão de espaço. sendo o espaço gerado palo método salvo em um dataframe para ser utilizado nos próximos passos.Gráficamente o agrupamento no espaço  pode ser visto a seguir:</strong>
+
+<img src="data/images/tree_based.png"/>
 <li>
-<strong>Preparação dos dados:</strong> Manipular os dados para se adequarem melhor num modelo de machine learning. 
- Re-escala dos atributos numéricos para não força o modelo a trabalhar com valores muito altos: 
+<strong>Preparação dos dados:</strong> Manipular os dados para se adequarem melhor num modelo de machine learning. foi aplicado a re-escala dos atributos numéricos para não força o modelo a trabalhar com valores muito altos: 
 <ul>
 <li>
-MinMaxscaler: foi aplicado a todos os atributos já na etapa de EDA I para melhor se adequar a transformação do embedding .
+MinMaxscaler: foi aplicado a todos os atributos já na etapa de estudo de espaço para melhor se adequar a transformação do embedding .
 </li>
 </ul>
 </li>
+    
 <li>
-<strong>Feature selection:</strong> Baseado nas analises dos atributos os escolhidos para dar continuidade a analise foram:
+<strong>Feature selection:</strong> Baseado nas análises dos atributos os escolhidos para dar continuidade a analise foram:
     <ul>
         <li>'customer_id'; </li>
         <li>'gross_revenue'; </li>
@@ -146,8 +146,19 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de EDA I para melho
         <li>'qtde_return'.</li>
     </ul>
 </li>
+
+<li>
+<strong>Modelos de machine learning:</strong> Nesta etapa foram aplicados quatro algoritmos de clusterização e observado quais as métricas se comportavam melhor para determinaod número de clusters:
+    <ul>      
+    <li>K-Means</li>
+    <li>Hierarchical Clustering</li>
+    <li>DBSCAN</li>
+    <li>HDBSCAN</li>
+</ul>
+</li>
 </ol>
 
+##  Os  principais insights de negócio
 
 ## Performance do modelo de Machine learning 
 
@@ -160,7 +171,7 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de EDA I para melho
 ##  Próximos passos
 <ul>
 <li>Testar mais hypotheses;</li>
-<li>Novo clico do CRISP-DM;</li>
+<li>Novo ciclo do CRISP-DM;</li>
 <li>Testar outros algoritmos de clusterização;</li>
 <li>Criar novas features.</li>
 </ul>
