@@ -211,9 +211,21 @@ No entanto, é importante ressaltar que a escolha do modelo e dos parâmetros id
 
 ## Performance de cluster
 
-Após o treino do modelo com o número de clusters definido, as pricipais caracteristicas dos clientes de cada agrupamento foi definida e pode ser observada na tabela abaixo.
+Após o treino do modelo com o número de clusters definido, as principais características dos clientes de cada agrupamento foram definidas e podem ser observadas na tabela abaixo.
 
 <img src="data/images/results_cluster.png"/>
+
+Para facilitar a identificação, observando algumas características de cada cluster, foram definidos os seguintes nomes:
+|Cluster| Name|
+|:-----:|:---:|
+|6 | Cluster Insiders|
+|5 | Cluster More products|
+|0 | Cluster Spend Money|
+|3 | Cluster Even More products|
+|7 | Cluster Less days|
+|2 | Cluster Less 1k|
+|1 | Cluster Stop Returns|
+|4 | Cluster More buy|
 
 ## Resultados 
 
