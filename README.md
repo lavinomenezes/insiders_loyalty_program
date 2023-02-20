@@ -218,14 +218,14 @@ Após o treino do modelo com o número de clusters definido, as principais carac
 Para facilitar a identificação, observando algumas características de cada cluster, foram definidos os seguintes nomes:
 |Cluster| Name|
 |:-----:|:---:|
-|6 | Cluster Insiders|
-|5 | Cluster More products|
-|0 | Cluster Spend Money|
-|3 | Cluster Even More products|
-|7 | Cluster Less days|
-|2 | Cluster Less 1k|
-|1 | Cluster Stop Returns|
-|4 | Cluster More buy|
+|6 | Insiders|
+|5 | More products|
+|0 | Spend Money|
+|3 | Even More products|
+|7 | Less days|
+|2 | Less 1k|
+|1 | Stop Returns|
+|4 | More buy|
 
 ## Resultados 
 
