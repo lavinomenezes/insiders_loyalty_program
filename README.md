@@ -155,7 +155,7 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de estudo de espaç
     <li>Hierarchical Clustering</li>
     <li>DBSCAN</li>
     <li>HDBSCAN</li>
-Ao finla foi escolhido o GMM.
+Ao final foi escolhido o GMM.
 </ul>
     <strong>Fine tuning:</strong> O fine tuning de modelos de clusterização é feito pela análise dos valores das métricas com diferentes número de clustes. As métricas utilizadas foram:
     <ul>
@@ -167,8 +167,8 @@ Ao finla foi escolhido o GMM.
     <li>
         <strong>Deploy:</strong> Nesta última etapa, já tendo aplicado o modelo final no dataset e observado os valores gerados, o modelo foi colocado em produção com ferramentas AWS da seguinte forma:
         <ul>
-            <li>Criado um banco de dados Postdgress com o aws RDS</li>
-            <li>Instânciado uma máquina  aws EC2 que atrávez da biblioteca 'papermill' irá executar o notebook para que constantemente seja refeita a análise dos clustes o observar a movimentação dos clientes entre os clusters</li>
+            <li>Criado um banco de dados Postgres com o aws RDS</li>
+            <li>Instânciado uma máquina  aws EC2 que atrávez da biblioteca 'papermill' e 'cronjob' irá executar o notebook para que constantemente seja refeita a análise dos clustes o observar a movimentação dos clientes entre os clusters</li>
             <li>Um dashboard no metabase foi criado acessando o banco de dados RDS</li>
         </ul>
 </li>
@@ -188,6 +188,22 @@ Verdadeiro, a mediana do cluster insider é 268% maior que o geral
 
 ## Performance do modelo de Machine learning 
 
+Nesse projeto, utilizamos três algoritmos de clusterização - Kmeans, Gaussian Mixture Model (GMM) e Hierarchical Clustering (HC) - em cada espaço de features e de embeddings. Para avaliar a qualidade dos agrupamentos produzidos, utilizamos a métrica de silhueta, que mede a distância entre os pontos de dados e seus respectivos clusters em relação aos outros clusters.
+
+Em cada caso, variamos o número de clusters e avaliamos o valor de Silhouette Score obtido para cada quantidade. Observamos que, em geral, a performance dos modelos aumentava à medida que o número de clusters aumentava, mas devido a restrições de negócios, decidimos limitar o número máximo de clusters para 10.
+
+Os resultados obtidos foram os seguintes:
+
+<ul>
+    <h3><strong>Original Feature Space</strong></h3>
+    <img src="data/images/results_original_feature_space.png"/>
+    <h3><strong>Umap</strong></h3>
+    <img src="data/images/results_umap_.png"/>
+    <h3><strong>T-SNE</strong></h3>
+    <img src="data/images/results_tsne.png"/>
+    <h3><strong>Tree Based Embedding</strong></h3>
+    <img src="data/images/results_tree.png"/>
+</ul>
 ## Performance de cluster
 
 ## Resultados 
