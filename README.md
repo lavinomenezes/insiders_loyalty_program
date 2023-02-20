@@ -198,7 +198,7 @@ Os resultados obtidos foram os seguintes:
     <h3><strong>Original Feature Space</strong></h3>
     <img src="data/images/results_original_feature_space.png"/>
     <h3><strong>Umap</strong></h3>
-    <img src="data/images/results_umap_.png"/>
+    <img src="data/images/results_umap.png"/>
     <h3><strong>T-SNE</strong></h3>
     <img src="data/images/results_tsne.png"/>
     <h3><strong>Tree Based Embedding</strong></h3>
