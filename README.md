@@ -148,17 +148,43 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de estudo de espaç
 </li>
 
 <li>
-<strong>Modelos de machine learning:</strong> Nesta etapa foram aplicados quatro algoritmos de clusterização e observado quais as métricas se comportavam melhor para determinaod número de clusters:
+<strong>Modelos de machine learning:</strong> Nesta etapa foram aplicados quatro algoritmos de clusterização e observado quais as métricas se comportavam melhor para determinado número de clusters:
     <ul>      
     <li>K-Means</li>
+    <li>GMM</li>
     <li>Hierarchical Clustering</li>
     <li>DBSCAN</li>
     <li>HDBSCAN</li>
+Ao finla foi escolhido o GMM.
 </ul>
+    <strong>Fine tuning:</strong> O fine tuning de modelos de clusterização é feito pela análise dos valores das métricas com diferentes número de clustes. As métricas utilizadas foram:
+    <ul>
+        <li>Within-Cluster Sum of Square (WSS)</li>
+        <li>elbow</li>
+        <li>Sillhouete Score</li>
+    </ul>
+      </li>
+    <li>
+        <strong>Deploy:</strong> Nesta última etapa, já tendo aplicado o modelo final no dataset e observado os valores gerados, o modelo foi colocado em produção com ferramentas AWS da seguinte forma:
+        <ul>
+            <li>Criado um banco de dados Postdgress com o aws RDS</li>
+            <li>Instânciado uma máquina  aws EC2 que atrávez da biblioteca 'papermill' irá executar o notebook para que constantemente seja refeita a análise dos clustes o observar a movimentação dos clientes entre os clusters</li>
+            <li>Um dashboard no metabase foi criado acessando o banco de dados RDS</li>
+        </ul>
 </li>
 </ol>
 
 ##  Os  principais insights de negócio
+
+<h3><strong>Os clientes do cluster insiders possuem um volume (faturamento) de compras acima de 10% do total de compras</strong></h3>
+Verdadeiro, o clusters insiders possui 54,4% do total de faturamento
+
+<h3><strong>Os clientes do cluster insiders possuem um volume ( produtos ) de compras acima de 10% do total de compras.</strong></h3>
+Verdadeiro, o clusters insiders possui 57% do total de vendas de produtos
+
+<h3><strong>A mediana do faturamento dos clientes do cluster insider é 10% maior do que a mediana do faturamento geral.</strong></h3>
+Verdadeiro, a mediana do cluster insider é 268% maior que o geral
+
 
 ## Performance do modelo de Machine learning 
 
@@ -170,7 +196,7 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de estudo de espaç
 
 ##  Próximos passos
 <ul>
-<li>Testar mais hypotheses;</li>
+<li>Testar mais hipóteses;</li>
 <li>Novo ciclo do CRISP-DM;</li>
 <li>Testar outros algoritmos de clusterização;</li>
 <li>Criar novas features.</li>
