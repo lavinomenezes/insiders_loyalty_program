@@ -194,17 +194,26 @@ Em cada caso, variamos o número de clusters e avaliamos o valor de Silhouette S
 
 Os resultados obtidos foram os seguintes:
 
-<ul>
-    <h3><strong>Original Feature Space</strong></h3>
-    <img src="data/images/results_original_feature_space.png"/>
-    <h3><strong>Umap</strong></h3>
-    <img src="data/images/results_umap.png"/>
-    <h3><strong>T-SNE</strong></h3>
-    <img src="data/images/results_tsne.png"/>
-    <h3><strong>Tree Based Embedding</strong></h3>
-    <img src="data/images/results_tree.png"/>
-</ul>
+<h3><strong>Original Feature Space</strong></h3>
+<img src="data/images/results_original_feature_space.png"/>
+<h3><strong>Umap</strong></h3>
+<img src="data/images/results_umap.png"/>
+<h3><strong>T-SNE</strong></h3>
+<img src="data/images/results_tsne.png"/>
+<h3><strong>Tree Based Embedding</strong></h3>
+<img src="data/images/results_tree.png"/>
+
+Foi observado que os modelos tiveram um desempenho inferior no espaço original das variáveis, apresentando uma melhora significativa dentro do espaço de embeddings. Como mencionado anteriormente, notamos que o aumento do número de clusters resultou em um aumento no valor da silhueta. Dessa forma, decidimos limitar o número de clusters a 8 e escolhemos o algoritmo GMM para treinar o modelo.
+
+Após o treinamento, avaliamos os resultados e verificamos que o modelo foi capaz de produzir agrupamentos mais precisos e coerentes dentro do espaço de embeddings. Essa abordagem nos permitiu obter uma compreensão mais profunda dos dados e fornecer insights valiosos para a nossa análise.
+
+No entanto, é importante ressaltar que a escolha do modelo e dos parâmetros ideais depende do contexto e dos objetivos do projeto, e pode variar de acordo com as características dos dados e do problema em questão.
+
 ## Performance de cluster
+
+Após o treino do modelo com o número de clusters definido, as pricipais caracteristicas dos clientes de cada agrupamento foi definida e pode ser observada na tabela abaixo.
+
+<img src="data/images/results_cluster.png"/>
 
 ## Resultados 
 
