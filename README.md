@@ -228,8 +228,28 @@ Para facilitar a identificação, observando algumas características de cada cl
 |4 | More buy|
 
 ## Resultados 
+<h3>1. Quem são as pessoas elegíveis para participar do programa de Insiders ?</h3>
+<h3>2. Quantos clientes farão parte do grupo?</h3>
+431
+<h3>3. Quais as principais características desses clientes ?</h3>
+<img src="data/images/insiders.png"/>
+<h3>4. Qual a porcentagem de contribuição do faturamento, vinda do Insiders ?</h3>
+O clusters 'insiders' possuem 50,5% do faturamento da empresa
+<h3>5. Qual a expectativa de faturamento desse grupo para os próximos meses ?</h3>
+<h3>6. Quais as condições para uma pessoa ser elegível ao Insiders ?</h3>
+<h3>7. Quais as condições para uma pessoa ser removida do Insiders ?</h3>
+<h3>8. Qual a garantia que o programa Insiders é melhor que o restante da base ?</h3>
+<h3>9. Quais ações o time de marketing pode realizar para aumentar o faturamento?</h3>
 
 ##  Conclusão
+
+O objetivo deste projeto foi segmentar os clientes para identificar os mais valiosos para a empresa, com o intuito de oferecer benefícios personalizados e aumentar a fidelidade desses clientes. Para isso, realizamos uma análise dos dados de compras dos clientes, levando em consideração o total gasto, a recência das compras, a frequência, a quantidade de produtos comprados e a quantidade de devoluções.
+
+Com base nesses critérios, foram criados 8 clusters, sendo o principal deles o cluster "Insider". Esse grupo é composto por 431 clientes, representando 14,5% da base de clientes total, e é responsável por 52% do faturamento da empresa e 52% do volume de compras.
+
+Com esses resultados em mãos, os times de negócios podem iniciar campanhas mais precisas para oferecer benefícios personalizados para os clientes do cluster "Insider", visando aumentar a fidelidade desses clientes e evitar sua evasão ou diminuição do ritmo de compras. Além disso, podemos incentivar os clientes dos outros agrupamentos a se tornarem insiders, oferecendo benefícios exclusivos para esse grupo seleto de clientes.
+
+Com essa estratégia, esperamos aumentar a fidelidade de nossos clientes, melhorar o desempenho da empresa e garantir o sucesso a longo prazo.
 
 ##  Próximos passos
 <ul>
