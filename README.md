@@ -228,10 +228,9 @@ Para facilitar a identificação, observando algumas características de cada cl
 |4 | More buy|
 
 ## Resultados 
-<h3>1. Quem são as pessoas elegíveis para participar do programa de Insiders ?</h3>
-<h3>2. Quantos clientes farão parte do grupo?</h3>
+<h3>Quantos clientes farão parte do grupo?</h3>
 431
-<h3>3. Quais as principais características desses clientes ?</h3>
+<h3>Quais as principais características desses clientes ?</h3>
 <img src="data/images/insiders.png"/>
 <h3>4. Qual a porcentagem de contribuição do faturamento, vinda do Insiders ?</h3>
 O clusters 'insiders' possuem 50,5% do faturamento da empresa
@@ -247,7 +246,7 @@ para ser classificada como cliente insiders o cliente stem de apresentar as cara
 |qtde_returns  |95.6   |133.7    |
 
 Esses são os valores de internalo do nosso modelo atual se as caracteristicas da base de clientes mudar também hávera mudança nesses valores.
-<h3>9. Quais ações o time de marketing pode realizar para aumentar o faturamento?</h3>
+<h3>Quais ações o time de marketing pode realizar para aumentar o faturamento?</h3>
 <ul>
     <li>Um acompanhamento mais preciso dos clientes 'insiders' para fidelizalos e evitar sua evasão</li>
     <li>Oferecer benefícios exclusivos para os clientes que estão próximos de se tornarem Insiders, como descontos em produtos selecionados ou frete grátis em suas próximas compras.</li>
