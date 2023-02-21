@@ -237,13 +237,15 @@ Para facilitar a identificação, observando algumas características de cada cl
 O clusters 'insiders' possuem 50,5% do faturamento da empresa
 <h3>6. Quais as condições para uma pessoa ser elegível ou ser removida do Insiders ?</h3>
 para ser classificada como cliente insiders o cliente stem de apresentar as caracteristicas dentro de intervalos:
-|caracteristica|min|max|
-|:------------:|:-:|:-:|
-|gross_revenue|8658.96|10073.40
-|recency_days|19.2|21.2|
-|qtde_products|421.92|461.11|
-|freq|0.06|0.067|
-|qtde_returns|95.6|133.7|
+
+|caracteristica|min    |max      |
+|:------------:|:-----:|:-------:|
+|gross_revenue |8658.96|10073.40 |
+|recency_days  |19.2   |21.2     |
+|qtde_products |421.92 |461.11   |
+|freq          |0.06   |0.067    |
+|qtde_returns  |95.6   |133.7    |
+
 Esses são os valores de internalo do nosso modelo atual se as caracteristicas da base de clientes mudar também hávera mudança nesses valores.
 <h3>9. Quais ações o time de marketing pode realizar para aumentar o faturamento?</h3>
 <ul>
