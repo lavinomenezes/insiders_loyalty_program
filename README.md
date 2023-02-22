@@ -171,6 +171,7 @@ Ao final foi escolhido o GMM.
             <li>Instânciado uma máquina  aws EC2 que atrávez da biblioteca 'papermill' e 'cronjob' irá executar o notebook para que constantemente seja refeita a análise dos clustes o observar a movimentação dos clientes entre os clusters</li>
             <li>Um dashboard no metabase foi criado acessando o banco de dados RDS</li>
         </ul>
+<img src="data/images/deploy.png"/>
 </li>
 </ol>
 
@@ -229,7 +230,7 @@ Para facilitar a identificação, observando algumas características de cada cl
 
 ## Resultados 
 <h3>Quantos clientes farão parte do grupo?</h3>
-431
+943
 <h3>Quais as principais características desses clientes ?</h3>
 <img src="data/images/insiders.png"/>
 <h3>4. Qual a porcentagem de contribuição do faturamento, vinda do Insiders ?</h3>
@@ -237,15 +238,15 @@ O clusters 'insiders' possuem 50,5% do faturamento da empresa
 <h3>6. Quais as condições para uma pessoa ser elegível ou ser removida do Insiders ?</h3>
 para ser classificada como cliente insiders o cliente stem de apresentar as caracteristicas dentro de intervalos:
 
-|caracteristica|min    |max      |
-|:------------:|:-----:|:-------:|
-|gross_revenue |8658.96|10073.40 |
-|recency_days  |19.2   |21.2     |
-|qtde_products |421.92 |461.11   |
-|freq          |0.06   |0.067    |
-|qtde_returns  |95.6   |133.7    |
+|caracteristica|min    |max    |
+|:------------:|:-----:|:-----:|
+|gross_revenue |5471.44|6142.97|
+|recency_days  |57.05  |61.04  |
+|qtde_products |311.95 |331.11 |
+|freq          |0.294  |0.312  |
+|qtde_returns  |85.13  |192.70 |
 
-Esses são os valores de internalo do nosso modelo atual se as caracteristicas da base de clientes mudar também hávera mudança nesses valores.
+Esses são os valores de intervalo do nosso modelo atual. Se as características da base de clientes mudarem, haverá mudanças nesses valores.
 <h3>Quais ações o time de marketing pode realizar para aumentar o faturamento?</h3>
 <ul>
     <li>Um acompanhamento mais preciso dos clientes 'insiders' para fidelizalos e evitar sua evasão</li>
@@ -259,7 +260,7 @@ Esses são os valores de internalo do nosso modelo atual se as caracteristicas d
 
 O objetivo deste projeto foi segmentar os clientes para identificar os mais valiosos para a empresa, com o intuito de oferecer benefícios personalizados e aumentar a fidelidade desses clientes. Para isso, realizamos uma análise dos dados de compras dos clientes, levando em consideração o total gasto, a recência das compras, a frequência, a quantidade de produtos comprados e a quantidade de devoluções.
 
-Com base nesses critérios, foram criados 8 clusters, sendo o principal deles o cluster "Insider". Esse grupo é composto por 431 clientes, representando 14,5% da base de clientes total, e é responsável por 52% do faturamento da empresa e 52% do volume de compras.
+Com base nesses critérios, foram criados 8 clusters, sendo o principal deles o cluster "Insider". Esse grupo é composto por 943 clientes, representando 16,5% da base de clientes total, e é responsável por 54,2% do faturamento da empresa e 57,5% do volume de compras.
 
 Com esses resultados em mãos, os times de negócios podem iniciar campanhas mais precisas para oferecer benefícios personalizados para os clientes do cluster "Insider", visando aumentar a fidelidade desses clientes e evitar sua evasão ou diminuição do ritmo de compras. Além disso, podemos incentivar os clientes dos outros agrupamentos a se tornarem insiders, oferecendo benefícios exclusivos para esse grupo seleto de clientes.
 
