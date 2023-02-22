@@ -109,7 +109,7 @@ A divisão dos passos utilizados no projeto foi:
 |qtde_returns           | Quantidade de devoluções                         |
     
 
-    Com os novos atributos foi feita a remoção de valores nulos que surgiram com eles devido a forma como foram derivados.
+Com os novos atributos foi feita a remoção de valores nulos que surgiram com eles devido a forma como foram derivados.
 </li>
 <li>
 <strong>Análise exploratória de dados I (EDA I):</strong> Análise dos novos atributos criados, testando e validando hyphoteses para melhor entender o comportamento deles e como se relacionam. A analise consistiu em alguma etapas. Sendo elas:
