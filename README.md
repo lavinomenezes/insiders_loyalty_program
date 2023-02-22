@@ -93,6 +93,7 @@ A divisão dos passos utilizados no projeto foi:
 </li>
 <li>
 <strong>Feature engineering:</strong> Para compreender melhor o comportamento dos clientes, foram criados novos atributos a partir dos existentes. Estes atributos serão analisados para a formação de clusters. Sendo eles:
+    
 |Atributo               |Descrição                                         |
 |:---------------------:|:------------------------------------------------:|
 |gross_revenue          | receita bruta por cliente                        |
