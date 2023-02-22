@@ -93,21 +93,21 @@ A divisão dos passos utilizados no projeto foi:
 </li>
 <li>
 <strong>Feature engineering:</strong> Para compreender melhor o comportamento dos clientes, foram criados novos atributos a partir dos existentes. Estes atributos serão analisados para a formação de clusters. Sendo eles:
-
-<ul>
-        <li>gross_revenue;         </li>
-        <li>recency_days;          </li>
-        <li>qtde_invoice;          </li>
-        <li>qtde_items;            </li>
-        <li>qtde_products;         </li>
-        <li>avg_basket_size;       </li>
-        <li>avg_unique_basket_size;</li>
-        <li>freq;                  </li>
-        <li>avg_ticket;            </li>
-        <li>avg_rec_days;          </li>
-        <li>qtde_returns.          </li>
+|Atributo               |Descrição                                         |
+|:---------------------:|:------------------------------------------------:|
+|gross_revenue          | receita bruta por cliente                        |
+|recency_days           | Dias da última compra                            |
+|qtde_invoice           | Quantidade de compras                            |
+|qtde_items             | Quantidade de produtos únicos comprados          |
+|qtde_products          | Quantidade de produtos compras                   |
+|avg_basket_size        | Quantidade de produtos comprados por cesta       |
+|avg_unique_basket_size | Quantidade de produtos únicos comprados por cesta|
+|freq                   | Frequência                                       |
+|avg_ticket             | Ticket médio                                     |
+|avg_rec_days           | Recência média                                   |
+|qtde_returns           | Quantidade de devoluções                         |
     
-</ul>
+
     Com os novos atributos foi feita a remoção de valores nulos que surgiram com eles devido a forma como foram derivados.
 </li>
 <li>
