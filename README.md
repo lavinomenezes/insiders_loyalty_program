@@ -42,10 +42,10 @@ Entregar uma lista de pessoas elegíveis a participar dovprograma Insiders, junt
 
 ##  Premissas do negócio
 <ul>
-    <li>As informações estão limitadas no periodo de Novembro de 2016 ate Dezembro de 2017.</li>
-    <li>Na coluna "quantity" os valores negativos foram considerados devoluções.</li>
-    <li>Foram descartados linhas que o valor unitário "unit_price" é menor que 0.04.</li>
-    <li>Linhas em que o 'customer_id' tinha valores nulos foram preenchidos com valores sequenciais a partir do valor numérico mais alto da coluna. Por se tratar apenas de um identificador, esse processo não afetará o modelo ou a análise.</li>
+    <li>As informações estão limitadas no periodo de Novembro de 2016 ate Dezembro de 2017;</li>
+    <li>Na coluna "quantity" os valores negativos foram considerados devoluções;</li>
+    <li>Foram descartados linhas que o valor unitário "unit_price" é menor que 0.04;</li>
+    <li>Linhas em que o 'customer_id' tinha valores nulos foram preenchidos com valores sequenciais a partir do valor numérico mais alto da coluna. Por se tratar apenas de um identificador, esse processo não afetará o modelo ou a análise;</li>
     <li>Todas as linhas em que os valores da coluna "stock_code" não são puramente numéricos serão removidas, devido a falta de conhecimento sobre o significado desses valores.</li>
 </ul>
 
@@ -55,7 +55,7 @@ Entregar uma lista de pessoas elegíveis a participar dovprograma Insiders, junt
 Neste projeto foi aplicado o método CRISP-DM (Cross-Industry Standard Process for Data Mining) adaptado para os processos de ciência de dados que se tornou o CRIS-DS.
 
 ![](https://github.com/lavinomenezes/insiders_loyalty_program/blob/main/data/images/crisp.png)
-Modelo crisp-dm
+Modelo crisp-dm.
 
 A divisão dos passos utilizados no projeto foi:
 
@@ -78,8 +78,8 @@ A divisão dos passos utilizados no projeto foi:
         <li>Colunas removidas: 'description','country';</li>
         <li>Linhas removidas: 
             <ul>
-            <li>Linhas do 'unit_price' que tem valor abaixo de U$0.04</li> 
-            <li>Linhas que a coluna 'stock_code' possui os seguntes códigos: ['POST', 'D', 'DOT', 'M', 'S', 'AMAZONFEE', 'm', 'DCGSSBOY','DCGSSGIRL', 'PADS', 'B', 'CRUK','C2']</li> 
+            <li>Linhas do 'unit_price' que tem valor abaixo de U$0.04;</li> 
+            <li>Linhas que a coluna 'stock_code' possui os seguntes códigos: ['POST', 'D', 'DOT', 'M', 'S', 'AMAZONFEE', 'm', 'DCGSSBOY','DCGSSGIRL', 'PADS', 'B', 'CRUK','C2'];</li> 
             <li>Linhas que a coluna 'country' possuia essas descrições: ['European Community','Unspecified'].</li>
             </ul>
          </li>
@@ -87,6 +87,7 @@ A divisão dos passos utilizados no projeto foi:
 </li>
 <li>
 <strong>Feature engineering:</strong> Para compreender melhor o comportamento dos clientes, foram criados novos atributos a partir dos existentes. Estes atributos serão analisados para a formação de clusters. Sendo eles:
+    
     
 |Atributo               |Descrição                                         |
 |:---------------------:|:------------------------------------------------:|
@@ -121,6 +122,7 @@ Com os novos atributos foi feita a remoção de valores nulos que surgiram com e
     <strong>Ao final da etapa o 'Tree-based embedding' apresentou a melhor divisão de espaço. sendo o espaço gerado palo método salvo em um dataframe para ser utilizado nos próximos passos.Gráficamente o agrupamento no espaço  pode ser visto a seguir:</strong>
 
 <img src="data/images/tree_based.png"/>
+    
 <li>
 <strong>Preparação dos dados:</strong> Manipular os dados para se adequarem melhor num modelo de machine learning. foi aplicado a re-escala dos atributos numéricos para não força o modelo a trabalhar com valores muito altos: 
 <ul>
@@ -174,10 +176,10 @@ Ao final foi escolhido o GMM.
 
 <h3><strong>Os clientes do cluster insiders possuem um volume (faturamento) de compras acima de 10% do total de compras</strong></h3>
 Verdadeiro, o clusters insiders possui 54,4% do total de faturamento
-
+<img src="data/images/faturamento.png"/>
 <h3><strong>Os clientes do cluster insiders possuem um volume ( produtos ) de compras acima de 10% do total de compras.</strong></h3>
 Verdadeiro, o clusters insiders possui 57% do total de vendas de produtos
-
+<img src="data/images/produtos.png"/>
 <h3><strong>A mediana do faturamento dos clientes do cluster insider é 10% maior do que a mediana do faturamento geral.</strong></h3>
 Verdadeiro, a mediana do cluster insider é 268% maior que o geral
 
