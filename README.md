@@ -133,7 +133,7 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de estudo de espaç
 </li>
     
 <li>
-<strong>Feature selection:</strong> Baseado nas análises dos atributos os escolhidos para dar continuidade a analise foram:
+<strong>Feature selection:</strong> Baseado nas análises dos atributos os escolhidos para dar continuidade foram:
     <ul>
         <li>'customer_id'; </li>
         <li>'gross_revenue'; </li>
