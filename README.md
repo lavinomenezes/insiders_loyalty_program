@@ -151,11 +151,10 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de estudo de espaç
 <li>
 <strong>Modelos de machine learning:</strong> Nesta etapa foram aplicados quatro algoritmos de clusterização e observado quais as métricas se comportavam melhor para determinado número de clusters:
     <ul>      
-    <li>K-Means</li>
-    <li>GMM</li>
-    <li>Hierarchical Clustering</li>
-    <li>DBSCAN</li>
-    <li>HDBSCAN</li>
+    <li>K-Means;</li>
+    <li>GMM;</li>
+    <li>Hierarchical Clustering;</li>
+    <li>DBSCAN;</li>
 Ao final foi escolhido o GMM.
 </ul>
     <strong>Fine tuning:</strong> O fine tuning de modelos de clusterização é feito pela análise dos valores das métricas com diferentes número de clustes. As métricas utilizadas foram:
@@ -168,9 +167,10 @@ Ao final foi escolhido o GMM.
     <li>
         <strong>Deploy:</strong> Nesta última etapa, já tendo aplicado o modelo final no dataset e observado os valores gerados, o modelo foi colocado em produção com ferramentas AWS da seguinte forma:
         <ul>
-            <li>Criado um banco de dados Postgres com o aws RDS</li>
-            <li>Instânciado uma máquina  aws EC2 que atrávez da biblioteca 'papermill' e 'cronjob' irá executar o notebook para que constantemente seja refeita a análise dos clustes o observar a movimentação dos clientes entre os clusters</li>
-            <li>Um dashboard no metabase foi criado acessando o banco de dados RDS</li>
+            <li>Criado um Bucket S3 (Simple Storage Service) na AWS para armazenar os dados dos clientes;</li>
+            <li>Criado um banco de dados Postgres com o AWS RDS (Relational Database Service), onde os dados já tratados e agrupados serão arquivados;</li>
+            <li>Foi instanciado um ambiente Linux AWS EC2 (Elastic Compute Cloud) que, por meio das bibliotecas 'papermill' e 'cronjob', executará o notebook para que a análise dos clusters seja constantemente atualizada e a movimentação dos clientes entre os clusters seja observada;</li>
+            <li>Um dashboard no metabase foi criado acessando o banco de dados RDS.</li>
         </ul>
 <img src="data/images/deploy.png"/>
 </li>
@@ -254,6 +254,9 @@ Esses são os valores de intervalo do nosso modelo atual. Se as características
     <li>Oferecer benefícios exclusivos para os clientes que estão próximos de se tornarem Insiders, como descontos em produtos selecionados ou frete grátis em suas próximas compras.</li>
     <li>Podemos enviar ofertas personalizadas com base em seus históricos de compra para aumentar a probabilidade deles se tornarem Insiders.</li>
 </ul>
+
+abaixo o dashborad no app Metabase:
+<img src="data/images/insiders_report.gif"/>
 
 É importante destacar que esses incentivos devem ser cuidadosamente planejados para que não prejudiquem o valor da marca ou o desempenho da empresa. Por isso, é importante analisar os dados de compra dos clientes e criar incentivos que estejam alinhados com seus perfis e necessidades.
 
