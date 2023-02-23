@@ -269,9 +269,9 @@ Com essa estratégia, esperamos aumentar a fidelidade de nossos clientes, melhor
 ##  Próximos passos
 <ul>
 <li>Novo ciclo do CRISP-DM;</li>
-<li>Criar novas features.</li>
+<li>Criar novas features;</li>
 <li>Testar mais hipóteses;</li>
-<li>Testar outros algoritmos de clusterização;</li>
+<li>Testar outros algoritmos de clusterização.</li>
 </ul>
 
 ## Ferramentas utilizadas
