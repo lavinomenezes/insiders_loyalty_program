@@ -148,7 +148,7 @@ MinMaxscaler: foi aplicado a todos os atributos já na etapa de estudo de espaç
 <strong>Modelos de machine learning:</strong> Nesta etapa foram aplicados quatro algoritmos de clusterização e observado quais as métricas se comportavam melhor para determinado número de clusters:
     <ul>      
     <li>K-Means;</li>
-    <li>GMM;</li>
+    <li>Gaussian Mixture Model(GMM);</li>
     <li>Hierarchical Clustering;</li>
     <li>DBSCAN;</li>
 Ao final foi escolhido o GMM.
@@ -268,10 +268,10 @@ Com essa estratégia, esperamos aumentar a fidelidade de nossos clientes, melhor
 
 ##  Próximos passos
 <ul>
-<li>Testar mais hipóteses;</li>
 <li>Novo ciclo do CRISP-DM;</li>
-<li>Testar outros algoritmos de clusterização;</li>
 <li>Criar novas features.</li>
+<li>Testar mais hipóteses;</li>
+<li>Testar outros algoritmos de clusterização;</li>
 </ul>
 
 ## Ferramentas utilizadas
@@ -281,11 +281,16 @@ Com essa estratégia, esperamos aumentar a fidelidade de nossos clientes, melhor
     <li>Git</li>
     <li>Python</li>
     <li>Pandas</li>
+    <li>Pandas Profile</li>
     <li>Numpy</li>
     <li>Sklearn</li>
     <li>Seaborn</li>
     <li>Umap</li>
     <li>PCA</li>
     <li>T-SNE</li>
-    <li>aws</li>
+    <li>Kmeans</li>
+    <li>Gaussian Mixture Model</li>
+    <li>Hierarchical Clustering</li>
+    <li>AWS</li>
+    <li>Metabase</li>
 </ul>
