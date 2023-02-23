@@ -3,19 +3,13 @@
 
 ## Problema de negócio
 
-A empresa All in One Place é uma empresa Outlet Multimarcas, ou seja, ela comercializa produtos de segunda
-linha de várias marcas a um preço menor, através de um e-commerce.
+A empresa All in One Place é um outlet multimarcas que comercializa produtos de segunda linha de várias marcas a um preço menor, por meio de um e-commerce.
 
-Em pouco mais de 1 anos de operação, o time de marketing percebeu que alguns clientes da sua base,
-compram produtos mais caros, com alta frequência e acabam contribuindo com uma parcela significativa do
-faturamento da empresa.
+Em pouco mais de 1 ano de operação, o time de marketing percebeu que alguns clientes de sua base compram produtos mais caros com alta frequência e contribuem significativamente para o faturamento da empresa.
 
-Baseado nessa percepção, o time de marketing vai lançar um programa de fidelidade para os melhores clientes
-da base, chamado Insiders. Mas o time não tem um conhecimento avançado em análise de dados para eleger
-os participantes do programa.
+Com base nessa percepção, o time de marketing lançará um programa de fidelidade para os melhores clientes da base, chamado Insiders. No entanto, o time não tem conhecimento avançado em análise de dados para selecionar os participantes do programa.
 
-Por esse motivo, o time de marketing requisitou ao time de dados uma seleção de clientes elegíveis ao
-programa, usando técnicas avançadas de manipulação de dados. Será entregue uma lista contendo os clientes classificados de acordo com suas caracteristicas de consumo, junto a lista também será entregue um dashboard para melhor visualização das caracteristicas dos grupos resultantes da análise. 
+Por esse motivo, o time de marketing requisitou ao time de dados uma seleção de clientes elegíveis para o programa, usando técnicas avançadas de manipulação de dados. Será entregue uma lista contendo os clientes classificados de acordo com suas características de consumo. Além disso, um dashboard será entregue para melhor visualização das características dos grupos resultantes da análise 
 
 **Dataset overview**
 
