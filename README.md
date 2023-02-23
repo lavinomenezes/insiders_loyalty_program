@@ -256,7 +256,8 @@ Esses são os valores de intervalo do nosso modelo atual. Se as características
 </ul>
 
 abaixo o dashborad no app Metabase:
-<img src="data/images/insiders_report.gif"/>
+
+![](data/images/insiders_report.gif)
 
 É importante destacar que esses incentivos devem ser cuidadosamente planejados para que não prejudiquem o valor da marca ou o desempenho da empresa. Por isso, é importante analisar os dados de compra dos clientes e criar incentivos que estejam alinhados com seus perfis e necessidades.
 
